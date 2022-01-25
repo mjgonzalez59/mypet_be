@@ -1,0 +1,9 @@
+from rest_framework import serializers
+from authApp.models.serviceModel import Service
+
+class ServiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Service
+        fields = ['name', 'value']
+
+
